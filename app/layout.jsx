@@ -9,23 +9,21 @@ import Footer from "@/components/Footer";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
-  metadataBase: new URL("https://mudashir-roheemoh.vercel.app/"),
+  metadataBase: new URL("https://takellacodes.vercel.app/"),
 
   title: {
-    template: "Mudashir Roheemoh| %s",
-    default: "Mudashir Roheemoh| Home",
+    template: "Teja Akella| %s",
+    default: "Teja Akella| Home",
   },
-  description: `Mudashir Roheemoh's Portfolio Website`,
+  description: `Teja Akella's Portfolio Website`,
   verification: {
     google: "K5Ps2Gi-DdTPMs4js_p7qNkIgDR9OHAV7-TnHMpV7RU",
   },
   referrer: "origin-when-cross-origin",
   keywords: [
-    "Mudashir",
-    "Oluwabukola",
+    "Teja",
+    "Akella",
     "Roheemoh",
-    "Mudashir Roheemoh ",
-    "Mudashir Oluwabukola Roheemoh",
     "Portfolio",
     "Projects",
     "Contact",
@@ -33,8 +31,8 @@ export const metadata = {
     "Portfolio Website",
   ],
   authors: [
-    { name: "Mudashir" },
-    { name: "Roheemoh", url: "https://mudashir-roheemoh.vercel.app/" },
+    { name: "Teja" },
+    { name: "Akella", url: "https://takellacodes.vercel.app/" },
   ],
   alternates: {
     canonical: "/",
@@ -44,11 +42,10 @@ export const metadata = {
     },
   },
   openGraph: {
-    images: "/opengraph-image.jpg",
-    title: "Mudashir Roheemoh | Developer Extraordinaire",
+    title: "Teja Akella | Software and Security Engineering",
 
     description:
-      "Welcome to my digital hub! Explore my projects, journey, and passion for turning ideas into reality with code.",
+      "Welcome! Explore my projects, journey, and passion for turning ideas into reality with code.",
   },
 };
 

@@ -11,24 +11,14 @@ import {
 
 const icons = [
   {
-    path: "https://www.linkedin.com/in/mudashir",
+    path: "https://www.linkedin.com/in/takella",
     name: <RiLinkedinFill />,
     title: "LinkedIn",
   },
   {
-    path: "https://github.com/oluwabukola2610",
+    path: "https://github.com/takella6315",
     name: <RiGithubFill />,
     title: "GitHub",
-  },
-  {
-    path: "https://twitter.com/Rhoy__b",
-    name: <RiTwitterXFill />,
-    title: "Twitter X",
-  },
-  {
-    path: "https://www.instagram.com/___rhoy.b/",
-    name: <RiInstagramFill />,
-    title: "Instagram",
   },
 ];
 
@@ -49,14 +39,6 @@ const Socials = ({ containerStyles, iconsStyles }) => {
           </a>
         );
       })}
-      <a
-        href="https://wa.link/kc7kxf"
-        className={`${iconsStyles}`}
-        target="_blank"
-        title="WhatsApp"
-      >
-        <RiWhatsappFill className="fill-green-400" />
-      </a>
     </div>
   );
 };

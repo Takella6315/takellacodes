@@ -20,20 +20,16 @@ const Hero = () => {
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="space-y-3 flex flex-col items-center md:items-start">
               <h2 className="text-xl font-semibold text-primary">
-                Hi, my name is
+                Hey there! My name is
               </h2>
               <h1 className="text-3xl md:text-5xl font-extrabold  text-[#c4d1e6]">
-                Mudashir Roheemoh
+                Teja Akella
               </h1>
               <h2 className="text-2xl font-medium text-[#c4d1e6]">
-                Frontend Web Developer
+                Software and Security engineering
               </h2>
               <p className="text-[#7587a8] text-lg text-center md:text-left">
-                Being a skilled front-end developer, I excel in creating
-                user-friendly web interfaces and delivering exceptional digital
-                experiences. With a keen sense of design and a love for coding,
-                I bring a blend of creativity and precision to every project I
-                take on.
+                put description here
               </p>
             </div>
 
@@ -45,7 +41,7 @@ const Hero = () => {
                 </Button>
               </Link>
               <a
-                href="/assets/MudashirCV.pdf"
+                href="/assets/TejaAkellaResume.pdf"
                 download="mudashir roheemoh Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
