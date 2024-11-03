@@ -16,9 +16,9 @@ const Footer = () => {
             Copyright &copy; {currentYear} All Rights Reserved
           </div>
           <div className="text-muted-foreground">
-            Made with 💙 by  {""}
-            <a href="roheemohmudashir@gmail.com" className="text-primary">
-              Roheemoh
+            Made by  {""}
+            <a href="mailto:takella6315@gmail.com" className="text-primary">
+              Teja Akella
             </a>{" "}
           </div>
         </div>

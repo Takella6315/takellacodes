@@ -23,7 +23,6 @@ export const metadata = {
   keywords: [
     "Teja",
     "Akella",
-    "Roheemoh",
     "Portfolio",
     "Projects",
     "Contact",

@@ -9,7 +9,6 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <Services />
       <Work />
       <Cta />
     </main>

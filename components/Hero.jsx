@@ -47,7 +47,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 <Button variant="secondary" className="gap-x-2">
-                  Download CV <Download size={18} />
+                  Download Resume <Download size={18} />
                 </Button>
               </a>
             </div>
@@ -64,7 +64,7 @@ const Hero = () => {
             <Badge
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill />}
-              endCountNum={2}
+              endCountNum={3}
               badgeText="Years of Experience"
             />
 
@@ -72,7 +72,7 @@ const Hero = () => {
             <Badge
               containerStyles="absolute top-[70%] -left-[1rem] p-2"
               icon={<RiTodoFill />}
-              endCountNum={10}
+              endCountNum={20}
               endCountText="+"
               badgeText="Completed projects"
             />

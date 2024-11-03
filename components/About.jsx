@@ -10,8 +10,8 @@ import {
 
 const infoData = [
 
-  { icon: <MailIcon size={20} />, text: "roheemohmudashir@gmail.com" },
-  { icon: <MapPin size={20} />, text: "Lagos, Nigeria" },
+  { icon: <MailIcon size={20} />, text: "takella6315@gmail.com" },
+  { icon: <MapPin size={20} />, text: "Atlanta, GA" },
 ];
 
 const qualificationData = [
@@ -19,14 +19,14 @@ const qualificationData = [
     title: "Education",
     data: [
       {
-        school: "Nupat Technology, Lagos",
-        qualification: "Software Development",
+        school: "Georgia Institue of Technology",
+        qualification: "Computer Engineering w/ Cybersecurity & Systems and Architecture",
         years: "2022 - 2023",
       },
       {
-        school: "Lagos State University, Lagos",
-        qualification: "BSC",
-        years: "2017 - 2022",
+        school: "Purdue University",
+        qualification: "",
+        years: "2023 - 2024",
       },
     ],
   },
@@ -34,19 +34,29 @@ const qualificationData = [
     title: "Experience",
     data: [
       {
-        company: "Loger Limited",
-        role: "Frontend Developer",
-        years: "July 2024 - Present",
+        company: "Reffy Inc",
+        role: "Full Stack Developer",
+        years: "January 2024 - Present",
       },
       {
-        company: "Purscliq Limited",
-        role: "Frontend Developer",
-        years: "Aug 2023 - Sep 2024",
+        company: "Purdue VIPER Lab",
+        role: "Research Intern",
+        years: "January 2024 - May 2024",
       },
       {
-        company: "Swiftvia Logistics",
-        role: "React Developer",
-        years: "May - Jan. 2022",
+        company: "Air Force Research Lab",
+        role: "Research Scholar",
+        years: "June 2023 - July 2023",
+      },
+      {
+        company: "Air Force Research Lab",
+        role: "Research Scholar",
+        years: "June 2022 - July 2022",
+      },
+      {
+        company: "Accenture",
+        role: "Student Intern",
+        years: "January 2022 - May 2022",
       },
     ],
   },
@@ -144,13 +154,7 @@ const About = () => {
                       helped companies create intuitive interfaces, seamless
                       user experiences, and high-quality, responsive
                       applications. <br />
-                      But let’s be real {""}
-                      <span className="text-[#e6f0ff] font-medium">
-                        what truly sets me apart
-                      </span>{" "}
-                      is my passion for excellence and user-focused design. For
-                      me, it’s not just about writing clean code, it’s about
-                      delivering a product that doesn’t just work but wows.
+                      
                     </p>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
                       When I’m not coding, you’ll find me devouring books,

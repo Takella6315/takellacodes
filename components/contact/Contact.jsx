@@ -27,17 +27,17 @@ const Contact = () => {
                 <MailIcon size={18} className="text-primary" />
                 <div>
                   <a
-                    href="mailto:roheemohmudashir@gmail.com"
+                    href="mailto:takella6315@gmail.com"
                     className="hover:text-primary transition duration-300"
                   >
-                    roheemohmudashir@gmail.com{" "}
+                    takella6315@gmail.com{" "}
                   </a>
                 </div>
               </div>
               {/* Address */}
               <div className="flex items-center gap-x-8">
                 <HomeIcon size={18} className="text-primary" />
-                <div>Lagos, Nigeria</div>
+                <div>Atlanta, GA</div>
               </div>
             </div>
 

@@ -8,7 +8,7 @@ import { User, MailIcon, ArrowRightIcon, MessageSquare } from "lucide-react";
 const Form = () => {
   return (
     <form
-      action="https://getform.io/f/bc8a3574-0432-490a-80a4-8d93d3d8c55e"
+      action="https://getform.io/f/amdddwzb"
       method="POST"
       className="flex flex-col gap-y-4"
     >
@@ -17,7 +17,7 @@ const Form = () => {
       <input
         type="hidden"
         name="_autoresponse"
-        value="Hello, Thank you for contacting me. I've received your message and will be in touch shortly. In the meantime, feel free to explore my portfolio to see my latest work. Best regards, Roheemoh"
+        value="Hello, Thank you for contacting me. I've received your message and will be in touch shortly. In the meantime, feel free to explore my portfolio to see my latest work. Best regards, Teja Akella"
       />
 
       <div className="relative flex items-center">
