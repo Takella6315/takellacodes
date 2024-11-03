@@ -1,4 +1,4 @@
-import Resume from "@/components/resume/resume";
+import Resume from "@/components/resume/Resume";
 
 export const metadata = {
   title: "Projects",

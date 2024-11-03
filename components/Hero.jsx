@@ -42,7 +42,7 @@ const Hero = () => {
               </Link>
               <a
                 href="/assets/TejaAkellaResume.pdf"
-                download="mudashir roheemoh Resume.pdf"
+                download="Teja Akella Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
