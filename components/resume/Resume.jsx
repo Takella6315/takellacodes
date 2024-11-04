@@ -15,13 +15,16 @@ const Resume = () => {
         download="Teja Akella Resume"
         target="_blank"
         rel="noopener noreferrer"
-      >        
+      >
         <Button className="gap-x-2">
           Download Resume <Download size={18} />
         </Button>
       </a>
-      <embed src="/assets/TejaAkellaResume.pdf" width="1000" height="750"></embed>
-    </section>
+      <div className="w-full max-w-[1300px]">
+        <embed src="/assets/TejaAkellaResume.pdf"  className="w-full h-[90vh]"></embed>
+      </div>
+</section>
+
 
   );
   
