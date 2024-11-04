@@ -26,10 +26,10 @@ const Hero = () => {
                 Teja Akella
               </h1>
               <h2 className="text-2xl font-medium text-[#c4d1e6]">
-                Software and Security engineering
+                Software and Security engineer
               </h2>
               <p className="text-[#7587a8] text-lg text-center md:text-left">
-                put description here
+                Second-year Computer engineering student @ Georgia Tech. 
               </p>
             </div>
 
