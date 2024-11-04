@@ -67,22 +67,21 @@ const skillsData = [
     title: "Skills",
     data: [
       {
-        title: "Markup Languages",
-        list: "HTML",
+        title: "Programming Languages",
+        list: "Java, Python, JavaScript, TypeScript, HTML, Go, SQL, MIPS",
       },
       {
         title: "Styles",
-        list: "CSS3, Tailwind, SCSS",
-      },
-      {
-        title: "Programming Languages",
-        list: "JavaScript, Typescript",
+        list: "CSS3, Tailwind, Bootstrap",
       },
       {
         title: "Frameworks",
-        list: "Next.js, React, Svelte, React Native, Expo",
+        list: "Next.js, React, Svelte, React Native",
       },
       {
+        title: "Tools/Platforms",
+        list: "Docker, PowerShell, MATLAB, Raspberry PI, Arduino, Postgres, AWS",
+      },{
         title: "Version Control",
         list: "Git, GitHub ",
       },
@@ -147,20 +146,14 @@ const About = () => {
                 <TabsContent value="Personal">
                   <div className="text-center xl:text-left">
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      Hey there! I’m a web developer who’s all about blending
-                      creativity with innovative technology to create engaging
-                      online experiences. With a toolkit that includes
-                      JavaScript, TypeScript, Next.js, and TailwindCSS, I’ve
-                      helped companies create intuitive interfaces, seamless
-                      user experiences, and high-quality, responsive
-                      applications. <br />
-                      
-                    </p>
-                    <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      When I’m not coding, you’ll find me devouring books,
-                      exploring the latest in tech, or binge-watching a new
-                      series. Curious about my work? Let’s connect and create
-                      something awesome together!
+                      Hey there! I’m a software engineer skilled in full-stack development, cybersecurity, and AI research. 
+                      From building scalable infrastructures at Reffy Inc. to enhancing brain tumor detection with neural 
+                      networks at Purdue, I’m all about creating impactful solutions. My work spans web applications, 
+                      network visualization tools, multiplayer games, and security solutions to keep systems robust and resilient. <br/>                     CompTIA Security+ and Network+ certifications, I prioritize both functionality and security in my work.<br />
+                      <br/>With certifications like CompTIA Security+ and Network+, I prioritize security alongside expertise in 
+                      React, TypeScript, Docker, and AWS. Whether it’s optimizing applications or tackling complex challenges, 
+                      I love blending creativity with tech. Let’s connect to bring your next project to life!
+                      <br />
                     </p>
                     {/* Icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">

@@ -8,18 +8,20 @@ const ProjectCard = ({ project }) => {
   return (
     <Card className="group overflow-hidden relative">
       <CardHeader className="p-0">
-        <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
-          <Image
-            className="absolute top-0 shadow-2xl size-auto"
-            src={project.image}
-            width={245}
-            height={250}
-            alt=""
-            priority
-          />
+        <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat">
+          {/* Centering the Image */}
+          <div className="flex items-center justify-center w-full h-full mt-">
+            <Image
+              className="object-cover shadow-2xl transition-transform duration-300 group-hover:scale-105"
+              src={project.image}
+              fill={true}
+              alt=""
+              priority
+            />
+          </div>
 
           {/* Buttons */}
-          <div className="flex gap-x-4">
+          <div className="absolute flex gap-x-4">
             <Link
               href={project.link}
               title="Demo"
@@ -32,7 +34,7 @@ const ProjectCard = ({ project }) => {
         </div>
       </CardHeader>
       <div className="h-full px-8 py-6">
-        <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">
+        <Badge className="uppercase text-sm font-medium mb-2 absolute bottom-4 right-5">
           {project.category}
         </Badge>
         <div className="h-32 overflow-y-auto">

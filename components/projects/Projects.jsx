@@ -29,7 +29,7 @@ const Projects = () => {
         {/* Tabs */}
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
           {/* Tab List */}
-          <TabsList className="w-full grid h-full md:grid-cols-4 gap-4 lg:max-w-[740px] mb-12 mx-auto md:border dark:border-none">
+          <TabsList className="w-full grid h-full md:grid-cols-5 gap-4 lg:max-w-[900px] mb-12 mx-auto md:border dark:border-none px-2">
             {categories.map((category, index) => {
               return (
                 <TabsTrigger
