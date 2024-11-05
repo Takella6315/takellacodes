@@ -37,21 +37,21 @@ export const projectData2 = [
   },
   {
     image:
-      "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1730754324/Screenshot_2024-11-04_at_4.04.49_PM_r24s6l.png",
+      "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1730836014/Keylogger_Graphic_pxkdho.avif",
     category: "Cybersecurity",
     name: "Keylogger w/ SMTP trasmit",
     description:
       "",
-    link: "https://github.com/Takella6315/network-packet-tracing",
+    link: "https://github.com/Takella6315/Cybersecurity-Keylogger",
   },
   {
     image:
-      "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1730754693/Screenshot_2024-11-04_at_4.11.25_PM_gm18ru.png",
+      "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1730836155/Image_Encryption_Graphic_ka4gcf.jpg",
     category: "Cybersecurity",
     name: "Image Encryption via image-key",
     description:
       "",
-    link: "https://github.com/Takella6315/Prescription-Management",
+    link: "https://github.com/Takella6315/Image-Encryption",
   },
   {
     image:

@@ -20,8 +20,8 @@ const Resume = () => {
           Download Resume <Download size={18} />
         </Button>
       </a>
-      <div className="w-full max-w-[1300px]">
-        <embed src="/assets/TejaAkellaResume.pdf"  className="w-full h-[90vh]"></embed>
+      <div className="w-full max-w-[1400px] items-center justify-center flex">
+        <embed src="/assets/TejaAkellaResume.pdf"  className="w-[80%] h-[90vh]"></embed>
       </div>
 </section>
 

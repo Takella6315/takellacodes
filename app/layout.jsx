@@ -16,9 +16,6 @@ export const metadata = {
     default: "Teja Akella| Home",
   },
   description: `Teja Akella's Portfolio Website`,
-  verification: {
-    google: "K5Ps2Gi-DdTPMs4js_p7qNkIgDR9OHAV7-TnHMpV7RU",
-  },
   referrer: "origin-when-cross-origin",
   keywords: [
     "Teja",
@@ -37,7 +34,6 @@ export const metadata = {
     canonical: "/",
     languages: {
       "en-US": "/en-US",
-      "de-DE": "/de-DE",
     },
   },
   openGraph: {
@@ -52,10 +48,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <Head>
-        <meta
-          name="google-site-verification"
-          content="K5Ps2Gi-DdTPMs4js_p7qNkIgDR9OHAV7-TnHMpV7RU"
-        />
       </Head>
       <body className={outfit.className}>
         <ThemeProvider attribute="class" defaultTheme="system">

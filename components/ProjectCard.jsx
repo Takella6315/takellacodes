@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
       <CardHeader className="p-0">
         <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat">
           {/* Centering the Image */}
-          <div className="flex items-center justify-center w-full h-full mt-">
+          <div className="flex items-center justify-center w-full h-full">
             <Image
               className="object-cover shadow-2xl transition-transform duration-300 group-hover:scale-105"
               src={project.image}
