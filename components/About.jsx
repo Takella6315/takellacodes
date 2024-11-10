@@ -21,7 +21,7 @@ const qualificationData = [
       {
         school: "Georgia Institue of Technology",
         qualification: "Computer Engineering w/ Cybersecurity & Systems and Architecture",
-        years: "2022 - 2023",
+        years: "Expected Graduation: 2026",
       },
       {
         school: "Purdue University",
@@ -67,11 +67,11 @@ const skillsData = [
     title: "Skills",
     data: [
       {
-        title: "Programming Languages",
+        title: "Programming",
         list: "Java, Python, JavaScript, TypeScript, HTML, Go, SQL, MIPS",
       },
       {
-        title: "Styles",
+        title: "Styling",
         list: "CSS3, Tailwind, Bootstrap",
       },
       {
@@ -83,23 +83,15 @@ const skillsData = [
         list: "Docker, PowerShell, MATLAB, Raspberry PI, Arduino, Postgres, AWS",
       },{
         title: "Version Control",
-        list: "Git, GitHub ",
+        list: "Git, GitHub, GitLab",
+      },
+      {
+        title: "Certifications",
+        list: "CompTIA Network+, CompTIA Security+, GFACT",
       },
     ],
   },
-  {
-    title: "Tools",
-    data: [
-      {
-        imgPath: "/about/vscode.svg",
-        title: "VS Code",
-      },
-      {
-        imgPath: "/about/figma.svg",
-        title: "Figma",
-      },
-    ],
-  },
+
 ];
 
 const About = () => {
@@ -290,38 +282,7 @@ const About = () => {
                       </div>
                     </div>
 
-                    {/* Tools */}
-                    <div>
-                      <h4 className="text-4xl font-semibold mb-2 xl:text-left">
-                        Tools
-                      </h4>
-                      <div className="border-b border-border mb-4"></div>
-                      {/* Tools List */}
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
-                        {getData(skillsData, "Tools").data.map(
-                          (item, index) => {
-                            const { imgPath } = item;
-                            return (
-                              <div className="flex flex-col">
-                                <span className="hover:scale-110 duration-200 cursor-pointer">
-                                  <Image
-                                    src={imgPath}
-                                    width={48}
-                                    height={48}
-                                    alt={item.title}
-                                    title={item.title}
-                                    priority
-                                  />
-                                </span>
-                                <p className="text-xs mt-1 text-primary">
-                                  {item.title}
-                                </p>
-                              </div>
-                            );
-                          }
-                        )}
-                      </div>
-                    </div>
+                    
                   </div>
                 </TabsContent>
               </div>

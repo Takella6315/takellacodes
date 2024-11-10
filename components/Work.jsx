@@ -13,10 +13,10 @@ import { projectData2 } from "./projects/content";
 
 const Work = () => {
   return (
-    <section className="relative mb-12 xl:mb-48">
-      <div className="container mx-auto">
+    <section className="relative mb-12 xl:mb-48 mt-10">
+      <div className="container mx-auto mt-[150px]">
         {/* Text */}
-        <div className="items-center max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center xl:items-start">
+        <div className="items-center max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mt-10 mb-12 xl:h-[400px] flex flex-col justify-center xl:items-start">
           <h2 className="section-title mb-4">Recent Projects</h2>
           <p className="subtitle mb-8">Here are a few of my recent projects</p>
           <Link href="/projects">
@@ -25,7 +25,7 @@ const Work = () => {
         </div>
 
         {/* Slider */}
-        <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
+        <div className="xl:max-w-[1000px] xl:absolute right-0 top-0 ">
           <Swiper
             className="xl:h-[480px]"
             slidesPerView={1}

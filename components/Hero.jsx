@@ -29,7 +29,7 @@ const Hero = () => {
                 Software and Security engineer
               </h2>
               <p className="text-[#7587a8] text-lg text-center md:text-left">
-                Second-year Computer engineering student @ Georgia Tech. 
+                Computer engineering student @ Georgia Tech. 
               </p>
             </div>
 
