@@ -138,10 +138,10 @@ const About = () => {
                 <TabsContent value="Personal">
                   <div className="text-center xl:text-left">
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      Hey there! I’m a software engineer skilled in full-stack development, cybersecurity, and AI research. 
+                      Hey there! I’m a software engineer skilled in full-stack development, cybersecurity, information security, and IT operations 
                       From building scalable infrastructures at Reffy Inc. to enhancing brain tumor detection with neural 
                       networks at Purdue, I’m all about creating impactful solutions. My work spans web applications, 
-                      network visualization tools, multiplayer games, and security solutions to keep systems robust and resilient. <br/>                     CompTIA Security+ and Network+ certifications, I prioritize both functionality and security in my work.<br />
+                      network visualization tools, multiplayer games, and security solutions to keep systems robust and resilient. <br/>
                       <br/>With certifications like CompTIA Security+ and Network+, I prioritize security alongside expertise in 
                       React, TypeScript, Docker, and AWS. Whether it’s optimizing applications or tackling complex challenges, 
                       I love blending creativity with tech. Let’s connect to bring your next project to life!
