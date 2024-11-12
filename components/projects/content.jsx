@@ -1,6 +1,15 @@
 export const projectData2 = [
   {
     image:
+      "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1731447426/Screenshot_2024-11-12_at_4.36.44_PM_ezhj7x.png",
+    category: "HW/SW",
+    name: "Motion Detecting controlled Servo motor",
+    description:
+      "Arduino tool to help me turn on/off my light whenever I enter/leave my room.",
+    link: "/projects/ece1100",
+  },
+  {
+    image:
       "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1730754324/Screenshot_2024-11-04_at_4.04.49_PM_r24s6l.png",
     category: "Cybersecurity",
     name: "Network Traffic Visualization",
@@ -56,7 +65,7 @@ export const projectData2 = [
   {
     image:
       "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1730758111/Agar.io_Remake_Image_qcx4um.png",
-    category: "Games/Simulations",
+    category: "Web Development",
     name: "Agar.io Remake",
     description:
       "",
