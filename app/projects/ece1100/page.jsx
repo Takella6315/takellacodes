@@ -1,12 +1,11 @@
 'use client'
+import { ArrowBigRight } from "lucide-react"
 import Image from "next/image"
-
-
-
+import { Button } from "@/components/ui/button"
 export default function page() {
   return (
-    <section class="p-8 min-h-screen">
-      <div class="project-description">
+    <section class="flex flex-col items-center justify-center min-h-screen">
+      <div class="project-description px-6 mx-12">
         <p class="mb-4">
           I recently designed and built a motion-controlled servo system, combining an Arduino microcontroller with a Passive Infrared (PIR) sensor. This project was intended to explore automation using motion detection technology, aiming to create a functional and responsive system that could detect movement within a specific range and react accordingly by adjusting the servo motor's position.
         </p>
@@ -14,7 +13,7 @@ export default function page() {
         <p class="mb-4">
           The core of this setup is the Arduino, which processes signals from the PIR sensor to detect motion in the 
           surrounding area. PIR sensors are especially suited for projects like these due to their low power consumption, 
-          sensitivity, and ease of integration with microcontrollers. When the PIR sensor detects movement, it sends a 
+          sensitivity, and ease of integration with microcontrollers. Whein the PIR sensor detects movement, it sends a 
           signal to the Arduino, which then triggers the servo motor to rotate to a predefined position. I configured 
           the servo to respond with different angles based on the range of motion detected, creating a dynamic and 
           interactive response. The concept of this project is suitable for various real-world applications, such as automated doors, rotating camera mounts, or even simple robotic arms.
@@ -49,7 +48,20 @@ export default function page() {
           network for remote control and monitoring, or integrating additional sensors to enhance its sensitivity and 
           responsiveness. 
         </p>
+
+        
       </div>
+      <a
+        href="https://github.com/Takella6315/motiondetectingarduino"
+        download="Teja Akella Resume"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button className="mt-12 mx-auto">
+          You can find my code here <ArrowBigRight size={18}/>
+        </Button>
+      </a>
+
     </section>
   )
 };
