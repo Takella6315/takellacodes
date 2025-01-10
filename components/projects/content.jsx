@@ -6,7 +6,7 @@ export const projectData2 = [
     name: "Motion Detecting controlled Servo motor",
     description:
       "Arduino tool to help me turn on/off my light whenever I enter/leave my room.",
-    link: "/projects/ece1100",
+    link: "",
   },
   {
     image:
