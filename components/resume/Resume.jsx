@@ -20,7 +20,7 @@ const Resume = () => {
         </Button>
       </a>
       <div className="w-full max-w-[1400px] items-center justify-center flex">
-        <embed src="/assets/TejaAkellaResume.pdf"  className="w-[80%] h-[90vh]"></embed>
+        <embed src="/assets/Teja_Akella_Resume.pdf"  className="w-[80%] h-[90vh]"></embed>
       </div>
 </section>
 
