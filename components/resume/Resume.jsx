@@ -10,7 +10,7 @@ const Resume = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center gap-y-4">
       <a
-        href="/assets/TejaAkellaResume.pdf"
+        href="/assets/Teja_Akella_Resume.pdf"
         download="Teja Akella Resume"
         target="_blank"
         rel="noopener noreferrer"
