@@ -41,7 +41,7 @@ export const projectData2 = [
     category: "Web Development",
     name: "Bragsheet.ai",
     description:
-      "",
+      "Platform to help students write bragsheets.",
     link: "https://bragsheet.ai/",
   },
   {
