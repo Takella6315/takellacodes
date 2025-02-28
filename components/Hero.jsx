@@ -41,7 +41,7 @@ const Hero = () => {
                 </Button>
               </Link>
               <a
-                href="/assets/TejaAkellaResume.pdf"
+                href="/assets/Teja_Akella_Resume.pdf"
                 download="Teja Akella Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
