@@ -1,12 +1,12 @@
 export const projectData2 = [
   {
     image:
-      "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1731447426/Screenshot_2024-11-12_at_4.36.44_PM_ezhj7x.png",
-    category: "HW/SW",
-    name: "Motion Detecting controlled Servo motor",
+      "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1740707040/1740453947182_iy6ko4.jpg",
+    category: "AI",
+    name: "ProteinAI",
     description:
-      "Arduino tool to help me turn on/off my light whenever I enter/leave my room.",
-    link: "",
+      "Protein-Protein Interactions Predictor and 3D modeling.",
+    link: "https://proteinai.tech/",
   },
   {
     image:
@@ -33,7 +33,7 @@ export const projectData2 = [
     name: "Reffy.ai",
     description:
       "AI tool that professors are using to manage and write recommendation letters",
-    link: "https://github.com/Takella6315/network-packet-tracing",
+    link: "https://www.reffy.ai/",
   },
   {
     image:
@@ -42,7 +42,7 @@ export const projectData2 = [
     name: "Bragsheet.ai",
     description:
       "",
-    link: "https://github.com/Takella6315/Prescription-Management",
+    link: "https://bragsheet.ai/",
   },
   {
     image:
