@@ -21,7 +21,7 @@ const qualificationData = [
       {
         school: "Georgia Institue of Technology",
         qualification: "Computer Engineering w/ Cybersecurity & Systems and Architecture",
-        years: "Expected Graduation: 2026",
+        years: "Expected Graduation: 2027",
       },
       {
         school: "Purdue University",
@@ -33,6 +33,21 @@ const qualificationData = [
   {
     title: "Experience",
     data: [
+      {
+        company: "SynesisAI",
+        role: "Founder/CEO",
+        years: "January 2025 - Present",
+      },
+      {
+        company: "NASA Ames Research Center",
+        role: "Software Engineering Intern",
+        years: "June 2025 - Present",
+      },
+      {
+        company: "Georgia Tech CyFI Lab",
+        role: "Cybersecurity Research Engineer",
+        years: "March 2025 - Present",
+      },
       {
         company: "Reffy Inc",
         role: "Full Stack Developer",
@@ -68,7 +83,7 @@ const skillsData = [
     data: [
       {
         title: "Programming",
-        list: "Java, Python, JavaScript, TypeScript, HTML, Go, SQL, MIPS",
+        list: "Java, Python, JavaScript, TypeScript, HTML, Go, SQL, C, X86, MIPS",
       },
       {
         title: "Styling",
@@ -81,7 +96,7 @@ const skillsData = [
       {
         title: "Tools/Platforms",
         list: "Docker, PowerShell, MATLAB, Raspberry PI, Arduino, Postgres, AWS",
-      },{
+      }, {
         title: "Version Control",
         list: "Git, GitHub, GitLab",
       },
@@ -138,12 +153,12 @@ const About = () => {
                 <TabsContent value="Personal">
                   <div className="text-center xl:text-left">
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      Hey there! I’m a software engineer skilled in full-stack development, cybersecurity, information security, and IT operations 
-                      From building scalable infrastructures at Reffy Inc. to enhancing brain tumor detection with neural 
-                      networks at Purdue, I’m all about creating impactful solutions. My work spans web applications, 
-                      network visualization tools, multiplayer games, and security solutions to keep systems robust and resilient. <br/>
-                      <br/>With certifications like CompTIA Security+ and Network+, I prioritize security alongside expertise in 
-                      React, TypeScript, Docker, and AWS. Whether it’s optimizing applications or tackling complex challenges, 
+                      Hey there! I’m a software engineer skilled in full-stack development, cybersecurity, information security, and IT operations
+                      From building scalable infrastructures at Reffy Inc. to enhancing brain tumor detection with neural
+                      networks at Purdue, I’m all about creating impactful solutions. My work spans web applications,
+                      network visualization tools, multiplayer games, and security solutions to keep systems robust and resilient. <br />
+                      <br />With certifications like CompTIA Security+ and Network+, I prioritize security alongside expertise in
+                      React, TypeScript, Docker, and AWS. Whether it’s optimizing applications or tackling complex challenges,
                       I love blending creativity with tech. Let’s connect to bring your next project to life!
                       <br />
                     </p>
@@ -282,7 +297,7 @@ const About = () => {
                       </div>
                     </div>
 
-                    
+
                   </div>
                 </TabsContent>
               </div>
