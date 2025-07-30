@@ -34,11 +34,6 @@ const qualificationData = [
     title: "Experience",
     data: [
       {
-        company: "SynesisAI",
-        role: "Founder/CEO",
-        years: "January 2025 - Present",
-      },
-      {
         company: "NASA Ames Research Center",
         role: "Software Engineering Intern",
         years: "June 2025 - Present",
@@ -61,12 +56,7 @@ const qualificationData = [
       {
         company: "Air Force Research Lab",
         role: "Research Scholar",
-        years: "June 2023 - July 2023",
-      },
-      {
-        company: "Air Force Research Lab",
-        role: "Research Scholar",
-        years: "June 2022 - July 2022",
+        years: "June 2022 - July 2023",
       },
       {
         company: "Accenture",
