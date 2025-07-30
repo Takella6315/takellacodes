@@ -1,12 +1,39 @@
 export const projectData2 = [
   {
     image:
+      "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1753891475/ARC_Meatball_68299_w9tjmw.webp",
+    category: "Web Development",
+    name: "COMING SOON: Open-Source Risk Assessment Platform",
+    description:
+      "Coming soon to NASA Github...Open Source Risk assessment platform",
+    link: "",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1753891475/ARC_Meatball_68299_w9tjmw.webp",
+    category: "AI",
+    name: "COMING SOON: Custom Graph RAG AI Research",
+    description:
+      "Coming soon...AI Research & Paper for NASA",
+    link: "",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1753891371/Screenshot_2025-07-30_at_9.02.46_AM_rpeg8b.png",
+    category: "Cybersecurity",
+    name: "Custom Volatility3 Plugin",
+    description:
+      "Custom Volatility3 plugin on Linux to analyze memory dumps from AI/ML processes, achieving 95% extraction accuracy of neural network-related Python objects.",
+    link: "https://github.com/Takella6315/Volatility-gc-plugin",
+  },
+  {
+    image:
       "https://res.cloudinary.com/dvt9oo5gl/image/upload/v1740707040/1740453947182_iy6ko4.jpg",
     category: "AI",
     name: "ProteinAI",
     description:
       "Protein-Protein Interactions Predictor and 3D modeling.",
-    link: "https://proteinai.tech/",
+    link: "https://www.synesisai.me/",
   },
   {
     image:

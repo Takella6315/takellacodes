@@ -53,7 +53,7 @@ export default function page() {
       </div>
       <a
         href="https://github.com/Takella6315/motiondetectingarduino"
-        download="Teja Akella Resume"
+        download="Teja Akella"
         target="_blank"
         rel="noopener noreferrer"
       >

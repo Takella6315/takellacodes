@@ -50,7 +50,7 @@ const qualificationData = [
       },
       {
         company: "Reffy Inc",
-        role: "Full Stack Developer",
+        role: "Founding Engineer",
         years: "January 2024 - Present",
       },
       {
@@ -196,7 +196,7 @@ const About = () => {
                           </h4>
                         </div>
                         {/* Experience List */}
-                        <div className="flex flex-col gap-y-8">
+                        <div className="flex flex-col gap-y-8 mb-10">
                           {getData(qualificationData, "Experience").data.map(
                             (item, index) => {
                               const { company, role, years } = item;
