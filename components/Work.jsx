@@ -14,7 +14,7 @@ import { projectData2 } from "./projects/content";
 const Work = () => {
   return (
     <section className="relative mb-12 xl:mb-48 mt-10">
-      <div className="container mx-auto mt-[150px]">
+      <div className="container mx-auto mt-[250px]">
         {/* Text */}
         <div className="items-center max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mt-10 mb-12 xl:h-[400px] flex flex-col justify-center xl:items-start">
           <h2 className="section-title mb-4">Recent Projects</h2>
