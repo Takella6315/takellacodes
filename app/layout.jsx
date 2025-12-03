@@ -37,10 +37,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Teja Akella | Software and Security Engineering",
-
+    title: "Teja Akella | Computer Engineering Student @ Georgia Tech",
     description:
-      "Welcome! Explore my projects, journey, and passion for turning ideas into reality with code.",
+      "Computer Engineering student specializing in Cybersecurity, Systems & Architecture. AI Security Research Intern at Georgia Tech CyFI Lab. Former Software Engineer Intern at NASA Ames Research Center. Building innovative solutions in AI security, full-stack development, and distributed systems.",
   },
 };
 

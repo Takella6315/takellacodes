@@ -1,9 +1,9 @@
 import Resume from "@/components/resume/Resume";
 
 export const metadata = {
-  title: "Projects",
+  title: "Resume",
   description:
-    "Dive into my world of digital creations! From code to creativity, each project is a fun-filled adventure where tech meets imagination. Get ready for some exciting discoveries!",
+    "View Teja Akella's resume - Computer Engineering student at Georgia Tech specializing in Cybersecurity, Systems & Architecture. AI Security Research Intern, former NASA Software Engineer Intern, and Founding Engineer at Reffy Inc.",
 };
 
 
