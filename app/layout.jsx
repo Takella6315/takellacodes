@@ -1,12 +1,10 @@
-import { Outfit } from "next/font/google";
-import Head from "next/head";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import { ProgressBarProvider, ThemeProvider } from "@/components/Providers";
-import BackToTopButton from "@/components/BackToTopButton";
-import Footer from "@/components/Footer";
+import SimpleHeader from "@/components/SimpleHeader";
+import SimpleFooter from "@/components/SimpleFooter";
+import { ThemeProvider } from "@/components/Providers";
 
-const outfit = Outfit({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 export const metadata = {
   metadataBase: new URL("https://takellacodes.vercel.app/"),
@@ -45,17 +43,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <Head>
-      </Head>
-      <body className={outfit.className}>
-        <ThemeProvider attribute="class" defaultTheme="system">
-          <ProgressBarProvider>
-            <Header />
-            {children}
-            <BackToTopButton />
-            <Footer />
-          </ProgressBarProvider>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <body className={`${dmSans.className} flex flex-col min-h-screen antialiased bg-background text-foreground`}>
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          <SimpleHeader />
+          {children}
+          <SimpleFooter />
         </ThemeProvider>
       </body>
     </html>
