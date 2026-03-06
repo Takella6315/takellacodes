@@ -1,0 +1,35 @@
+# Runs 5 times per week at different days/times. Each run creates a random
+# number of commits (1–5) and pushes once. [skip ci] prevents the push from
+# re-triggering this workflow.
+name: automatic commits (5x/week, random count)
+on:
+  schedule:
+    # 5 times a week (UTC): Mon 14:00, Tue 15:00, Wed 13:00, Thu 16:00, Fri 12:00
+    - cron: '0 14 * * 1'
+    - cron: '0 15 * * 2'
+    - cron: '0 13 * * 3'
+    - cron: '0 16 * * 4'
+    - cron: '0 12 * * 5'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create random number of commits and push
+        run: |
+          N=$((RANDOM % 5 + 1))
+          echo "Creating $N commits"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p ./files
+          for i in $(seq 1 $N); do
+            F="./files/$(date +%s)-$i.emojic"
+            echo "🟩 Green chart - commit $i of $N ($(date -Iseconds)) 🟩" > "$F"
+            git add "$F"
+            git commit -m "chore: auto commit $i/$N [skip ci]"
+          done
+          git push
