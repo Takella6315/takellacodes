@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { getPost, getAllSlugs } from "@/content/blog";
 
 export async function generateStaticParams() {
@@ -28,7 +29,7 @@ export default function BlogPostPage({ params }) {
         </h1>
         <time className="text-muted-foreground text-sm">{post.date}</time>
         <div className="prose prose-neutral dark:prose-invert mt-8 max-w-none prose-p:text-muted-foreground prose-headings:text-foreground prose-a:text-primary prose-code:text-foreground prose-pre:bg-muted">
-          <ReactMarkdown>{post.content}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
         </div>
       </article>
     </main>
