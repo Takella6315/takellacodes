@@ -1,10 +1,8 @@
-# Runs 5 times per week at different days/times. Each run creates a random
-# number of commits (1–5) and pushes once. [skip ci] prevents the push from
-# re-triggering this workflow.
+# Runs 5 times per week. Commits are authored as YOU so they count on your profile.
+# Requires repo secrets: PAT, COMMITTER_EMAIL (and optionally COMMITTER_NAME).
 name: automatic commits (5x/week, random count)
 on:
   schedule:
-    # 5 times a week (UTC): Mon 14:00, Tue 15:00, Wed 13:00, Thu 16:00, Fri 12:00
     - cron: '0 14 * * 1'
     - cron: '0 15 * * 2'
     - cron: '0 13 * * 3'
@@ -15,18 +13,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # required so the workflow can push commits
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
 
       - name: Create random number of commits and push
+        env:
+          COMMITTER_NAME: ${{ secrets.COMMITTER_NAME }}
+          COMMITTER_EMAIL: ${{ secrets.COMMITTER_EMAIL }}
         run: |
           N=$((RANDOM % 5 + 1))
           echo "Creating $N commits"
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "${COMMITTER_NAME:-$GITHUB_ACTOR}"
+          git config user.email "$COMMITTER_EMAIL"
           mkdir -p ./files
           for i in $(seq 1 $N); do
             F="./files/$(date +%s)-$i.emojic"
