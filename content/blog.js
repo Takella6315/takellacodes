@@ -3,6 +3,13 @@
 
 export const posts = [
   {
+    title: "RCE in one of the biggest open source AI tool platforms ever? Coming soon..",
+    date: "2026-03-15",
+    excerpt:
+      "Remote code execution in a major open source AI platform—writeup and disclosure coming soon.",
+    comingSoon: true,
+  },
+  {
     // Coming-soon teaser — not clickable
     title: "PostgreSQL multi-tenant vuln (coming soon)",
     date: "2026-03-05",
