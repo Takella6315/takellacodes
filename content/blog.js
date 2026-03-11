@@ -119,6 +119,141 @@ For academics working on high-stakes, unpublished research, the "convenience" of
       "Exploring whether models can spot and kill command-and-control exfiltration before the first byte leaves the box. Coming soon.",
     comingSoon: true,
   },
+  {
+    slug: "llm-framework-supply-chain-keylogger",
+    title: "A keylogger, an LLM framework, and a supply-chain lesson I won't forget",
+    date: "2025-10-29",
+    excerpt:
+      "A writeup on how \"plug-and-play\" LLM tooling can become an exfiltration surface if you treat dependencies like trusted code. Defensive takeaways and audit snippets included.",
+    content: `## TL;DR
+
+I built a proof-of-concept **telemetry implant** in a “plug-and-play” LLM framework environment to demonstrate how easy it is for *untrusted code* to observe sensitive user input **once it’s inside your toolchain**.
+
+I’m **not** going to include keylogging code or step-by-step instructions (that’s malware), but I *will* share what mattered: **why it worked**, what it looked like from the outside, and how to harden your dev setup so this class of thing gets caught early.
+
+---
+
+## The setup: why LLM frameworks are a juicy target
+
+What makes modern LLM tooling convenient is also what makes it risky:
+
+- **Agent “tools” have broad permissions** (read files, run commands, call APIs).
+- **Frameworks are dependency-heavy** and install-time hooks are common.
+- **Developers run them locally** with access to SSH keys, tokens, and private repos.
+- A lot of “extensions” and “integrations” are basically **remote code execution with a nicer UI**.
+
+When you see *“drop in this package and it just works”*, read that as:
+
+> “drop in this package and you just ran someone else’s code.”
+
+---
+
+## What I demonstrated (high-level)
+
+The proof-of-concept was built to answer one question:
+
+> If I can get code executed inside a popular LLM workflow (plugin/tool/integration), how much user input can I observe **without popping alerts**?
+
+The scary part is not “keylogging” specifically — it’s **ambient access**:
+
+- long-lived shells
+- API keys in env vars
+- prompt transcripts
+- file contents (notes, writeups, credentials)
+- clipboard and “helper” utilities
+
+If you’re shipping an agent workflow to non-security engineers, you should assume:
+
+> someone will install a “helpful tool” that shouldn’t be trusted.
+
+---
+
+## The practical takeaway: treat toolchains like prod
+
+This is the checklist I wish more teams used for local AI tooling:
+
+### 1) Pin and lock everything
+
+- Use lockfiles.
+- Prefer hashes (where your ecosystem supports it).
+- Avoid “floating” dependencies in plugins.
+
+### 2) Run agents inside a sandbox
+
+If the tool doesn’t need filesystem + network + shell at the same time, don’t give it that.
+
+- Containers (Docker) with read-only mounts
+- OS sandboxing where possible (seccomp/AppArmor)
+- separate OS user with minimal permissions
+- denylist secrets by default
+
+### 3) Watch outbound traffic like you mean it
+
+Most exfil is boring: HTTPS to “somewhere”.
+
+- block unknown domains by default
+- capture DNS
+- inspect egress during “normal usage”
+
+---
+
+## Defensive code: quick dependency + hook audit
+
+These are **safe** snippets I actually use when auditing “AI helper” repos locally.
+
+### Find suspicious install scripts and lifecycle hooks
+
+~~~bash
+# npm/yarn/pnpm: look for install/postinstall/prepare hooks
+cat package.json | python -c "import json,sys; p=json.load(sys.stdin); print(p.get('scripts',{}))"
+~~~
+
+~~~bash
+# ripgrep for lifecycle scripts across monorepos
+rg -n '\"(preinstall|install|postinstall|prepare)\"\\s*:' .
+~~~
+
+### Find runtime input collection libraries (high signal, not proof)
+
+~~~bash
+rg -n '(pynput|keyboard\\b|GlobalHook|SetWindowsHookEx|CGEventTap|XRecord|iohook|node-keylogger)' .
+~~~
+
+### Find “phone home” patterns
+
+~~~bash
+rg -n '(https?://|wss?://|fetch\\(|axios\\(|XMLHttpRequest|WebSocket\\b)' .
+~~~
+
+### Runtime: log network destinations for a process (macOS)
+
+~~~bash
+# shows active connections; run while using the tool
+lsof -nP -iTCP -sTCP:ESTABLISHED | rg '<process-name>'
+~~~
+
+---
+
+## What to look for in a real review
+
+If you’re evaluating an “agent plugin” or “LLM tool”:
+
+- Does it have **clear data retention** and disclosure of processors?
+- Can it **execute arbitrary code** (directly or through “tools”)?
+- Is there a **permissions model** (read-only vs write vs exec)?
+- Can you run it **offline**?
+- Is there an auditable **changelog** and signed releases?
+
+If the answer is “no” to most of that, don’t let it touch sensitive work.
+
+---
+
+## Closing thought
+
+This wasn’t about being clever. It was about showing how a modern AI toolchain can become a **supply-chain problem** the moment you treat third-party “helpers” as trusted.
+
+If you want agent workflows in your org, that’s fine — just build the same guardrails you’d build for prod: least privilege, audit trails, and real egress control.`,
+  },
 ];
 
 export function getPost(slug) {
