@@ -13,13 +13,13 @@ export default function SimpleHeader() {
         <div className="flex items-center gap-4 text-sm">
           <Link
             href="/blog"
-            className="text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap"
+            className="nav-link text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap"
           >
             blog
           </Link>
           <Link
             href="/research"
-            className="text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap"
+            className="nav-link text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap"
           >
             research
           </Link>

@@ -32,9 +32,15 @@ export default function BlogPage() {
                   </span>
                 </div>
               ) : (
-                <Link href={`/blog/${post.slug}`} className="group block">
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="group block border-l-2 border-transparent hover:border-primary/60 pl-4 -ml-4 transition-all duration-300 hover:translate-x-1"
+                >
                   <span className="text-foreground font-medium group-hover:text-primary transition-colors">
                     {post.title}
+                    <span className="inline-block opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 text-primary ml-1">
+                      →
+                    </span>
                   </span>
                   <span className="text-muted-foreground text-sm block mt-1">
                     {post.date}

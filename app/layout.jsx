@@ -2,6 +2,8 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import SimpleHeader from "@/components/SimpleHeader";
 import SimpleFooter from "@/components/SimpleFooter";
+import ParticleField from "@/components/ParticleField";
+import BootSequence from "@/components/BootSequence";
 import { ThemeProvider } from "@/components/Providers";
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "600"] });
@@ -46,6 +48,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className="dark" suppressHydrationWarning>
       <body className={`${dmSans.className} flex flex-col min-h-screen antialiased bg-background text-foreground`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
+          <BootSequence />
+          <ParticleField />
           <SimpleHeader />
           {children}
           <SimpleFooter />
